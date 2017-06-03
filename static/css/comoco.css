@@ -1,0 +1,241 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body{
+   background-color: floralwhite;
+   overflow-x: hidden;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: white;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+.collection .collection-item.avatar {
+min-height: 43px;
+padding-left: 72px;
+position: relative;
+}
+
+.collection .collection-item.avatar .circle {
+width: 30px;
+height: 30px;
+    top: 6px;
+}
+
+#content{ margin-top: 30px; }
+#colapse-coments li{ list-style-type: none; }
+#colapse-coments .collection-item.avatar{ padding-left: 55px; }
+
+.text-w4{ font-weight: 400 !important; }
+
+.is-invalid label,
+.is-invalid label .active{
+   color: #F44336 !important;
+}
+
+.is-invalid .help-error{
+   color: #F44336;
+   font-size: small;
+   opacity: 1;
+   display: block;
+   position: absolute;
+   top: 48px;
+   transition: .2s opacity ease-out, .2s color ease-out;
+}
+
+.remember-me{
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+.forget-link:hover{ color: #26a69a;}
+
+.close-info{
+   border: none;
+   background: none;
+   font-weight: bold;
+   font-size: 25px;
+   margin-top: -8px;
+   color: #2c71a9 !important;
+}
+.close-info:focus{ background: none; border: none; }
+
+.close-success{
+   border: none;
+   background: none;
+   font-weight: bold;
+   font-size: 25px;
+   margin-top: -8px;
+   color: #208c24 !important;
+}
+.close-success:focus{ background: none; border: none; }
+
+
+/* SIDEBAR MENU */
+.sidebar{
+   position: absolute;
+   top: 64px;
+   right: -200px;
+   bottom: 0;
+   height: 41.4%;
+   width: 200px;
+   /*background-color: #323a44;*/
+   transform:translateX(0);
+   transition: transform 0.3s;
+}
+
+.sidebar .sub-sidebar{
+   height:50px;
+   text-align: center;
+   margin-top: 12px;
+   margin-bottom: -20px;
+   color: rgba(255, 255, 255, 0.4);
+   font-weight: bold;
+}
+
+.sidebar a{
+   text-align: center;
+   display: block;
+   height: 66px;
+   border-top: 1px solid rgba(255, 255, 255, 0.05);
+   border-bottom: 1px solid #2b333c;
+   line-height: 66px;
+   color: rgba(255, 255, 255, 0.4);
+   transform:translateX(200px);
+   /*transition: transform 0.3s;*/
+   transition: color 0.3s;
+}
+
+.sidebar a:focus,
+.sidebar a:hover{
+   text-decoration: none;
+   background-color: rgba(255, 255, 255, 0.05);
+   color: #FFF;
+}
+
+.sidebar-wave{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   fill: #323a44;
+   z-index: -1;
+}
+
+.has-sidebar .sidebar{
+   transform: translateX(-200px);
+}
+
+/*.has-sidebar .sidebar a{
+   transform: translateX(0);
+}
+
+.has-sidebar .sidebar a:nth-child(1){ transition-delay: 0.05s; }
+.has-sidebar .sidebar a:nth-child(2){ transition-delay: 0.10s; }
+.has-sidebar .sidebar a:nth-child(3){ transition-delay: 0.15s; }
+.has-sidebar .sidebar a:nth-child(4){ transition-delay: 0.20s; }
+.has-sidebar .sidebar a:nth-child(5){ transition-delay: 0.25s; }*/
+
+/* FIN SIDEBAR */
+
+
+/* BOX COOKIE ALERTE */
+
+.cookie-box-alert{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 10px;
+   background: #4c8faf;
+   color: #fff;
+   padding: 10px 15px;
+   width: 280px;
+   z-index: 100;
+}
+
+.cookie-box-alert a {
+   display: block;
+   text-align: center;
+   padding: 5px 10px;
+   margin: 8px auto 0 auto;
+   border-radius: 10px;
+   background: #00ecd6;
+   border: 2px solid #465fd9;
+   color: #a246d9;
+   transition: all .3s ease;
+}
+
+.cookie-box-alert a:hover{
+   background: #46A2D9;
+   color: #2f2f2f;
+}
+
+@media only screen and (max-width:480px) {
+   .cookie-box-alert{
+      text-align: center;
+      left: 0; right: 0;
+      margin: 0 auto;
+      max-width: 700px;
+      padding: 10px 30px;
+   }
+}
+
+/* BOX COOKIE ALERTE */
+
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  nav .brand-logo { left: 55%; }
+  .sidebar{ display: none; }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
