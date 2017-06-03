@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  		<title>{% block title %}Comoco: Djuzur Al Qamar{% endblock %}</title>
+  		<!-- CSS  -->
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  	<link href="{% static 'css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  	<link href="{% static 'css/font-awesome.min.css' %}" type="text/css" rel="stylesheet"/>
+	  	<link href="{% static 'css/comoco.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  	{% block styles %}{% endblock %}
+	</head>
+	<body>
+		{% include 'layouts/partials/_header.html' %}
+		<div id="content">
+			{% block content %}{% endblock %}
+		</div>
+		{% include 'layouts/partials/_footer.html' %}
+	</body>
+
+	<!--  Scripts-->
+   	<script src="{% static 'js/jquery.min.js' %}"></script>
+   	<script src="{% static 'js/materialize.min.js' %}"></script>
+   	<script src="{% static 'js/razeproduction.js' %}"></script>
+</html>
